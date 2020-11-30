@@ -1,0 +1,136 @@
+:root {
+    --cor-background: #F0F0F7;
+    --cor-titulos: rgb(62, 62, 62);
+    --cor-destaques: rgb(234, 29, 44);
+    --cor-detalhes: rgba(254, 200, 4, 0.8);
+    --cor-textarea: white;
+    --cor-textos: rgb(62, 62, 62);
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-background);
+}
+
+td {
+    text-align: center;
+    min-width: 60px;
+    color: var(--cor-textos);
+}
+
+tr {
+    border: 2px;
+}
+
+legend {
+    font: bold 30px arial, sans-serif;
+    text-align: center;
+    color: var(--cor-titulos);
+    background-color: var(--cor-detalhes);
+    border-radius: 6px;
+    border-color: black;
+    border: 50px;
+}
+
+button {
+    color: var(--cor-textos);
+    background-color: var(--cor-textarea);
+    border-color: gray;
+    border-radius: 5px;
+}
+
+#header {
+    width: 100%;
+    line-height: 70px;
+    padding: 50px 0px;
+    position: relative;
+    text-align: center;
+    color: var(--cor-titulos);
+    text-decoration: underline rgba(234, 29, 43, 0.8) solid;
+    font: 70px times, arial;
+
+}
+
+#fsPedido, 
+#fsClientes,
+#fsValores {
+    width: 80%;
+    background-color: var(--cor-destaques);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#fsPedido select,
+#fsClientes input {
+    color: var(--cor-textos);
+    background-color: var(--cor-textarea);
+    width: 20%;
+}
+
+#fsPedido fieldset,
+#fsClientes fieldset,
+#fsValores fieldset {
+    background-color: var(--cor-textarea);
+    min-height: 100px;
+    margin: 0;
+    margin-top: 15px; //arrumar
+}
+
+#pedidos, 
+#total,
+#clientes {
+    width: 50%;
+    background-color: var(--cor-textarea);
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    resize: none;
+}
+
+#total {
+    width: 30%;
+}
+
+#fsClientes fieldset input{
+    width: 60px;
+}
+
+#fsClientes fieldset textarea {
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+    resize: vertical;
+}
+
+#fsClientes button {
+    margin-top: 6px;
+}
+
+#fsValores fieldset {
+    position: relative;
+}
+
+#fsValores fieldset textarea {
+    background-color: var(--cor-textarea);
+    border: 0;
+    resize: none;
+}
+
+footer {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer button {
+    position: fixed;
+    bottom: 5px;
+    background-color: var(--cor-textos);
+    color: var(--cor-background);
+}
